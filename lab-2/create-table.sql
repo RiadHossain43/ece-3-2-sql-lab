@@ -1,7 +1,21 @@
-/* creating table */
-create  table course(
-    course_id number(10) not null, 
-    course_name varchar(20), 
-    pass_mark number(10) default 40, 
-    primary key (course_id)
+/* creating puchase table */
+create table purchase (
+    id int NOT NULL,
+    ondate DATE,
+    quantity int
+);
+/* creating sales table */
+create table sales (
+    id int NOT NULL,
+    ondate date,
+    quantity int
+);
+/* creating ledger table */
+create table ledger (
+    id int not null,
+    ondate date,
+    details varchar(255),
+    debit int,
+    credit int,
+    balance int
 );
