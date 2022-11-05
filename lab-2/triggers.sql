@@ -12,12 +12,14 @@ begin
     insert into ledger(
         id,
         ondate,
+        details,
         debit,
         credit,
         balance
     ) values(
         next_id,
         to_date(:new.ondate,'YYYY-MM-DD'),
+        concat('transaction for ', to_char(:new.quantity)),
         :new.quantity,
         0,
         :new.quantity+current_balance
@@ -40,12 +42,14 @@ begin
     insert into ledger(
         id,
         ondate,
+        details,
         debit,
         credit,
         balance
     ) values(
         next_id,
         to_date(:new.ondate,'YYYY-MM-DD'),
+        concat('transaction for ', to_char(:new.quantity)),
         0,
         :new.quantity,
         current_balance - :new.quantity
