@@ -36,5 +36,5 @@ insert into sales(
 ) values(
     0,
     to_date('2022-11-05','YYYY-MM-DD'),
-    5
+    8
 );

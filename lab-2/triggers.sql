@@ -23,6 +23,7 @@ begin
         :new.quantity+current_balance
     );
 end;
+/
 
 /*
 this trigger is for sales insert action
@@ -50,3 +51,4 @@ begin
         current_balance - :new.quantity
     );
 end;
+/
