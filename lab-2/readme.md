@@ -3,7 +3,7 @@
 Run the commands from the `create-table.sql` file sequentially. It will create all the three
 tables for you.
 
-# Creting a automated id sequece for ledger table
+# Creating a automated id sequece for ledger table
 
 Run the command from the `ledger-sequence.sql` file to generate a squence for ledger ids.
 This will be required to identify latest record from ledger table.
