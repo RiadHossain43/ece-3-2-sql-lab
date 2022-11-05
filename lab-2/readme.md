@@ -1,3 +1,22 @@
+# Requirements 
+
+`Ledger` table should automatically calculate balance based in `purchase` or `sales`.
+**insert** action on `purchase` or `sales` table should add new entry in ledger.
+### Ledger table
+| id          | details     | date        | credit | debit | balance |
+| ----------- | ----------- | ----------- | ------ | ----- | ------- | 
+| 1           | purchase    | 12 Nov 2022 | 3      | 0     | 7
+| 2           | sales       | 13 Nov 2022 | 0      | 1     | 8
+### Purchase table
+| id          | date        | quantity |
+| ----------- | ----------- | ------   | 
+| 1           | 12 Nov 2022 | 3        | 
+| 2           | 13 Nov 2022 | 0        | 
+### Sales table
+| id          | date        | quantity |
+| ----------- | ----------- | ------   | 
+| 1           | 12 Nov 2022 | 0        | 
+| 2           | 13 Nov 2022 | 1        | 
 # Creating the tables
 
 Run the commands from the `create-table.sql` file sequentially. It will create all the three

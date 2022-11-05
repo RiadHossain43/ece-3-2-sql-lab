@@ -19,7 +19,7 @@ begin
     ) values(
         next_id,
         to_date(:new.ondate,'YYYY-MM-DD'),
-        concat('transaction for ', to_char(:new.quantity)),
+        concat('purchase for ', to_char(:new.quantity)),
         :new.quantity,
         0,
         :new.quantity+current_balance
@@ -49,7 +49,7 @@ begin
     ) values(
         next_id,
         to_date(:new.ondate,'YYYY-MM-DD'),
-        concat('transaction for ', to_char(:new.quantity)),
+        concat('sales for ', to_char(:new.quantity)),
         0,
         :new.quantity,
         current_balance - :new.quantity
