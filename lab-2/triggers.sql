@@ -29,7 +29,7 @@ end;
 this trigger is for sales insert action
 */
 
-create trigger sales_to_ledger after insert on purchase
+create trigger sales_to_ledger after insert on sales
 for each row 
 declare 
     current_balance int;

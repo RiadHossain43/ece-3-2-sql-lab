@@ -16,7 +16,7 @@ insert into ledger(
     'some of transaction',
     0,
     5,
-    34
+    10
 );
 /* insert purchase record */
 insert into purchase(
